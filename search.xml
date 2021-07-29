@@ -2,6 +2,31 @@
 <search> 
   
   
+    
+    <entry>
+      <title>Hexo常用命令详解及使用方法</title>
+      <link href="/2021/07/28/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+      <url>/2021/07/28/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3%E5%8F%8A%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>##Hexo常用命令详解及使用方法</p><p><strong>Hexo常用命令详解及使用方法</strong></p><p><strong>hexo init</strong></p><p>hexo init命令用于初始化本地文件夹为网站的根目录</p><p>语法：</p><table><thead><tr><th>1</th><th>$ hexo init [folder]</th></tr></thead><tbody><tr><td></td><td></td></tr></tbody></table><p>参数说明：</p><p>folder 可选参数，用以指定初始化目录的路径，若无指定则默认为当前目录</p><p><strong>hexo new</strong></p><p>hexo new命令用于新建文章，可以简写为hexo n</p><p>语法：</p><table><thead><tr><th>1</th><th>$ hexo new [layout] <title>&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;参数说明：&lt;/p&gt;&lt;p&gt;layout：可选参数，用以指定文章类型，若无指定则默认由配置文件中的 default_layout选项决定&lt;/p&gt;&lt;p&gt;title：必填参数，用以指定文章标题，如果参数值中含有空格，则需要使用双引号包围&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo generate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo generate命令用于生成静态文件，可以简写为 hexo g&lt;/p&gt;&lt;p&gt;语法：&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;$ hexo generate&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;参数说明：&lt;/p&gt;&lt;p&gt;-d 选项，指定生成后部署&lt;/p&gt;&lt;p&gt;-w选项，监视文件变动&lt;/p&gt;&lt;p&gt;-b选项，生成过程中如果发生任何未处理的异常则抛出异常&lt;/p&gt;&lt;p&gt;-f选项，强制重新生成文件&lt;/p&gt;&lt;p&gt;-c选项，最大同时生成文件的数量，默认无限制&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo publish&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;语法：&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;$ hexo publish [layout] &lt;filename&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;发表草稿。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo server&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo server命令用于启动本地服务器，一般可以简写为hexo s&lt;/p&gt;&lt;p&gt;启动服务器，默认情况下，访问网址为： &lt;a href="http://localhost:4000/"&gt;http://localhost:4000/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;参数说明：&lt;/p&gt;&lt;p&gt;-p选项，重设端口&lt;/p&gt;&lt;p&gt;-s选项，只使用静态文件&lt;/p&gt;&lt;p&gt;-l选项，启动日记记录，使用覆盖记录格式&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo deploy&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo deploy命令用于部署网站，简写为hexo d&lt;/p&gt;&lt;p&gt;语法：&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;$ hexo deploy&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;参数说明&lt;/p&gt;&lt;p&gt;-g选项，部署之前预先生成静态文件&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo render&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo render用户渲染文件&lt;/p&gt;&lt;p&gt;语法：&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;$ hexo render &lt;file1&gt; [file2] …&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;参数说明：&lt;/p&gt;&lt;p&gt;-o选项，设置输出路径&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo migrate&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo migrate命令用于从其他博客系统 迁移内容。&lt;/p&gt;&lt;p&gt;语法：&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;$ hexo migrate &lt;type&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;p&gt;&lt;strong&gt;hexo clean&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo clean命令用于清除缓存文件（db.json）和已生成的静态文件（public）。&lt;/p&gt;&lt;p&gt;例如：在更换主题后，如果发现站点更改不生效，可以运行该命令。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo list&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo list命令用于列出网站资料&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo version&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo version命令显示hexo版本&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Option（选项）&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo –safe&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo –safe命令表示安全模式，用于禁用加载插件和脚本，安装新插件遭遇问题时，可以尝试以安全模式重新执行&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo –debug&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo –debug命令进入调试模式，在终端中显示调试信息并记录到debug.log&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo –silent&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo –silent简洁模式，隐藏终端信息。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo –draft&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo –draft命令，显示source/_drafts文件夹中的草稿文章&lt;/p&gt;&lt;p&gt;&lt;strong&gt;hexo –cwd&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;hexo –cwd自定义当前工作目录（Current working directory）的路径。&lt;/p&gt;&lt;p&gt;语法：&lt;/p&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;$ hexo –cwd /path/to/cwd&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</title></th></tr></thead></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 运维 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
